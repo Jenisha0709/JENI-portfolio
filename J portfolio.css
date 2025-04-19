@@ -1,0 +1,147 @@
+:root {
+    --bg: #0e0e12;
+    --text: #f4f4f9;
+    --accent: #280050;
+    --section-bg: #1a1a22;
+    --hover-bg: #2a2a36;
+    --border: #1e0053;
+    --light-bg: #fff;
+    --light-text: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    background: linear-gradient(45deg, #2c0058, #280466);
+    padding: 10px;
+    border-radius: 10px;
+    animation: gradientAnimation 4s ease infinite;
+}
+
+h1 {
+    margin-bottom: 5px;
+    color: var(--accent);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    cursor: pointer;
+    background-color: var(--section-bg);
+    color: var(--text);
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+h2:hover {
+    transform: scale(1.05);
+    background-color: var(--hover-bg);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 6px;
+    border-radius: 4px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: var(--hover-bg);
+    transform: scale(1.02);
+}
+
+.project-title {
+    font-weight: bold;
+    color: var(--accent);
+}
+
+.content {
+    transform: translateX(-100vw);
+    opacity: 0;
+    width: 100%;
+    padding: 0 10px;
+    background-color: var(--section-bg);
+    border-left: 4px solid var(--border);
+    border-radius: 0 4px 4px 0;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.content.show {
+    transform: translateX(0);
+    opacity: 1;
+    padding: 10px;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: var(--accent);
+    cursor: pointer;
+}
+
+/* Gradient animation */
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(45deg, #c084fc, #7c3aed);
+    }
+    50% {
+        background: linear-gradient(45deg, #7c3aed, #c084fc);
+    }
+    100% {
+        background: linear-gradient(45deg, #c084fc, #7c3aed);
+    }
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+}
+
+body.light-mode header {
+    background: linear-gradient(45deg, #f0e68c, #d1b74d);
+}
+
+body.light-mode h2 {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+}
+
+body.light-mode .content {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+    border-left: 4px solid #d1b74d;
+}

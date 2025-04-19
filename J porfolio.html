@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jenisha Portfolio</title>
+  <link rel="stylesheet" href="J portfolio.css" />
+</head>
+<body>
+  <!-- Dark Mode Toggle -->
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+  <div class="container">
+    <header>
+      <h1>Jenisha Delphin Mary J</h1>
+      <p>Email: <a href="mailto:jeni7dm@gmail.com">jeni7dm@gmail.com</a> | Phone: +91 93632 03867</p>
+      <p>
+        <a href="https://www.linkedin.com/in/jenisha7/">LinkedIn</a> |
+        <a href="https://github.com/Jenisha0709">GitHub</a>
+      </p>
+    </header>
+
+    <section onclick="toggleContent(this)">
+      <h2>About Me</h2>
+      <div class="content">
+        <p>I’m a passionate 3rd-year B.Tech student specializing in Artificial Intelligence and Data Science at St. Joseph’s Institute of Technology. With a CGPA of 8.62, I’m driven by curiosity, a love for learning, and a strong desire to turn ideas into impactful tech solutions.</p>
+      </div>
+    </section>
+
+    <section onclick="toggleContent(this)">
+      <h2>Skills</h2>
+      <div class="content">
+        <ul>
+          <li><strong>Languages:</strong> Java, Python, C, SQL, HTML, CSS, JavaScript</li>
+          <li><strong>Libraries & Tools:</strong> TensorFlow, Scikit-learn, NumPy, Pandas, Seaborn, Matplotlib, Figma</li>
+          <li><strong>Soft Skills:</strong> Teamwork, Communication, Time Management</li>
+        </ul>
+      </div>
+    </section>
+
+    <section onclick="toggleContent(this)">
+      <h2>Education</h2>
+      <div class="content">
+        <p><strong>B.Tech – Artificial Intelligence & Data Science</strong><br/>St. Joseph’s Institute of Technology (Nov 2022 – May 2026)<br/>CGPA: 8.62</p>
+      </div>
+    </section>
+
+    <section onclick="toggleContent(this)">
+      <h2>Experience</h2>
+      <div class="content">
+        <p><strong>Frontend Intern — Retech Solutions</strong><br/>15-day internship building responsive webpages using HTML, CSS, and JavaScript.</p>
+      </div>
+    </section>
+
+    <section onclick="toggleContent(this)">
+      <h2>Projects</h2>
+      <div class="content">
+        <ul>
+          <li><span class="project-title">Smart Audit:</span> Figma design of a Mobile app for tracking energy, water, and environmental consumption.</li>
+          <li><span class="project-title">Online Bookstore:</span> Django app with user auth, book management, and admin panel.</li>
+          <li><span class="project-title">Gym Data Management System:</span> Python tool to manage gym members and BMI-based workouts.</li>
+          <li><span class="project-title">Carbon Footprint Calculator:</span> Web tool to estimate carbon emissions from daily habits.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section onclick="toggleContent(this)">
+      <h2>Certifications</h2>
+      <div class="content">
+        <ul>
+          <li>Introduction to HTML, CSS, JavaScript — Coursera</li>
+          <li>Introduction to Machine Learning — Infosys Springboard</li>
+          <li>Python for Data Science — NPTEL-ELITE</li>
+          <li>Data Mining — NPTEL-ELITE</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <script src="J portfolio.js"></script>
+</body>
+</html>
